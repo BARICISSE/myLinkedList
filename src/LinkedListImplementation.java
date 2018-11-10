@@ -14,15 +14,21 @@ public class LinkedListImplementation {
     
     myList.head = n;
     
-    System.out.println(" old list " + myList.toString());
+  //  System.out.println(" old list " + myList.toString());
     
     
     
     Node newNode1 = new Node();
     newNode1.data = 5;
    myList.addFirst(newNode1);
-   System.out.println(" new list " +  myList.toString());
+   System.out.println(" old list " +  myList.toString());
     
+   
+   Node newNode2 = new Node();
+   newNode2.data = 8;
+   myList.addLast(newNode2);
+   System.out.println(" new list " +  myList.toString());
+
   }
 
 }
