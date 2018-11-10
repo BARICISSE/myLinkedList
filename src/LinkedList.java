@@ -44,6 +44,16 @@ public class LinkedList {
 		temp.next = null;	
 	}
 	
+	public void removeLast() {
+		Node temp = head;
+		while(temp.next.next != null) {
+			temp = temp.next;
+		}
+		temp.next = null;
+		
+		
+	}
+	
 	public String toString() {
 		ArrayList<Integer> list = new ArrayList<>();
 		list.add(head.data);

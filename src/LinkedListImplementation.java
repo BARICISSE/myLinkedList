@@ -41,7 +41,11 @@ public class LinkedListImplementation {
    System.out.println(" last list " +  myList.toString()); 
    
    //test removeFirst
-   myList.removeFirst();
+ //  myList.removeFirst();
+ //  System.out.println(" new list " +  myList.toString()); 
+
+ //test removeLast
+   myList.removeLast();
    System.out.println(" new list " +  myList.toString()); 
 
    
