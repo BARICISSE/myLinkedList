@@ -27,18 +27,23 @@ public class LinkedListImplementation {
    Node newNode2 = new Node();
    newNode2.data = 9;
    myList.addLast(newNode2);
-   System.out.println(" old list " +  myList.toString());
+  // System.out.println(" old list " +  myList.toString());
    
    
    Node newNode3 = new Node();
    newNode3.data = 8;
    myList.addAt(3, newNode3);
-   System.out.println(" new list " +  myList.toString());
+  // System.out.println(" new list " +  myList.toString());
    
    Node newNode4 = new Node();
    newNode4.data = 5;
    myList.addAt(1, newNode4);
+   System.out.println(" last list " +  myList.toString()); 
+   
+   //test removeFirst
+   myList.removeFirst();
    System.out.println(" new list " +  myList.toString()); 
+
    
 
   }

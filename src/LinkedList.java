@@ -37,7 +37,12 @@ public class LinkedList {
 		
 	}
 	
-	
+	public void removeFirst() {
+		if(head == null) return; 
+		Node temp = head;
+		head = head.next;
+		temp.next = null;	
+	}
 	
 	public String toString() {
 		ArrayList<Integer> list = new ArrayList<>();
@@ -50,4 +55,5 @@ public class LinkedList {
 
 		return list.toString();
 	}
+	
 }
