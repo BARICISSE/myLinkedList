@@ -19,15 +19,27 @@ public class LinkedListImplementation {
     
     
     Node newNode1 = new Node();
-    newNode1.data = 5;
+    newNode1.data = 4;
    myList.addFirst(newNode1);
-   System.out.println(" old list " +  myList.toString());
+  // System.out.println(" old list " +  myList.toString());
     
    
    Node newNode2 = new Node();
-   newNode2.data = 8;
+   newNode2.data = 9;
    myList.addLast(newNode2);
+   System.out.println(" old list " +  myList.toString());
+   
+   
+   Node newNode3 = new Node();
+   newNode3.data = 8;
+   myList.addAt(3, newNode3);
    System.out.println(" new list " +  myList.toString());
+   
+   Node newNode4 = new Node();
+   newNode4.data = 5;
+   myList.addAt(1, newNode4);
+   System.out.println(" new list " +  myList.toString()); 
+   
 
   }
 

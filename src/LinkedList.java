@@ -23,6 +23,22 @@ public class LinkedList {
 		temp.next = newNode;
 	}
 
+	public void addAt(int position, Node newNode) {
+		Node temp = head;
+		int count = 1;
+		while(count != position ) {
+			count++;
+			temp = temp.next;
+			
+		}
+		Node var = temp.next;
+		temp.next = newNode;
+		newNode.next = var;
+		
+	}
+	
+	
+	
 	public String toString() {
 		ArrayList<Integer> list = new ArrayList<>();
 		list.add(head.data);
