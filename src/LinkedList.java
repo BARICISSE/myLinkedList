@@ -22,6 +22,18 @@ public class LinkedList {
 		}
 		temp.next = newNode;
 	}
+	
+	public void remove(Node newNode) {
+		Node temp = head;
+		while(temp.next.data != newNode.data) {
+			temp = temp.next;
+			
+		}
+		Node vqr = temp.next;
+		temp.next = temp.next.next;
+		vqr.next = null; 
+	
+	}
 
 	public void addAt(int position, Node newNode) {
 		Node temp = head;
